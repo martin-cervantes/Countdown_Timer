@@ -28,8 +28,6 @@ const Timer = () => {
     setSecondsLeft(secondsLeftRef.current);
   }
 
-  const audio = new Audio(AlarmTone);
-
   useEffect(() => {
     const switchMode = () => {
       const nextMode = modeRef.current === 'work' ? 'break' : 'work';
@@ -50,6 +48,7 @@ const Timer = () => {
         return;
       }
       if (secondsLeftRef.current === 0) {
+        const audio = new Audio(AlarmTone);
         audio.play();
         return switchMode();
       }
