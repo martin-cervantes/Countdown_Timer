@@ -1,0 +1,48 @@
+:root {
+  --blue: #00f;
+  --green: #4aec8c;
+  --red: #f54e4e;
+}
+
+body {
+  background-color: #30384b;
+  color: #eee;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 340px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  width: 100px;
+}
+
+button.with-text {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  line-height: 36px;
+  padding: 10px 20px;
+  width: auto;
+}
+
+button.with-text svg {
+  float: left;
+  margin-right: 5px;
+  width: 36px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
